@@ -1,0 +1,11 @@
+{% block header %}
+  <h1>{% block title %}peliculas{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul>  
+{% for p in pelis %}
+        <li>  <h5>{{ p['title'] }}</h5></li>
+{% endfor %}
+</ul>
+{% endblock %}
